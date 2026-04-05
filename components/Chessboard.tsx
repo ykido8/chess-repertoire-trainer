@@ -1,6 +1,6 @@
-'use client';
-import { Chessground } from 'chessground';
-import { useEffect, useRef } from 'react';
+"use client";
+import { Chessground } from "chessground";
+import { useEffect, useRef } from "react";
 
 export default function Board({ fen, onMove }) {
   const ref = useRef(null);
@@ -15,8 +15,9 @@ export default function Board({ fen, onMove }) {
         events: { after: onMove }
       }
     });
+
     return () => cg.destroy();
   }, [fen]);
 
-  return <div ref={ref} className="w-[400px] h-[400px]"></div>;
+  return <div ref={ref} className="w-[400px] h-[400px]" />;
 }
