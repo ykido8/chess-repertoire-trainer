@@ -1,4 +1,5 @@
 "use client";
+import "chessground/dist/chessground.css";
 import { Chessground } from "chessground";
 import { useEffect, useRef } from "react";
 
