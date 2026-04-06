@@ -12,8 +12,8 @@ export default function Board({ fen, onMove }) {
       fen,
       movable: {
         free: false,
-        events: { after: onMove }
-      }
+        events: { after: onMove },
+      },
     });
 
     return () => cg.destroy();
