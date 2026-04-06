@@ -1,0 +1,36 @@
+.cg-board {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.cg-square {
+  position: absolute;
+  width: 12.5%;
+  height: 12.5%;
+}
+
+.cg-piece {
+  position: absolute;
+  width: 12.5%;
+  height: 12.5%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cg-layer {
+  position: absolute;
+  inset: 0;
+}
+
+.cg-wrap {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.cg-coord {
+  font-size: 10px;
+  pointer-events: none;
+}
