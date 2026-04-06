@@ -1,9 +1,11 @@
+/* Chessground base container */
 .cg-wrap {
   position: relative;
   width: 480px;
   height: 480px;
 }
 
+/* Tablero */
 .cg-board {
   position: absolute;
   inset: 0;
@@ -12,11 +14,13 @@
   grid-template-rows: repeat(8, 1fr);
 }
 
+/* Casilla */
 .cg-square {
   width: 100%;
   height: 100%;
 }
 
+/* Pieza */
 .cg-piece {
   width: 100%;
   height: 100%;
