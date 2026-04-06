@@ -22,6 +22,7 @@ export default function Board({ fen, onMove }) {
     return () => cg.destroy();
   }, [fen]);
 
+
   return (
     <div
       ref={ref}
@@ -30,6 +31,7 @@ export default function Board({ fen, onMove }) {
         height: "480px",
         position: "relative"
       }}
-    />
+    ></div>
   );
+
 }
