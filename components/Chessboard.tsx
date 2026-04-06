@@ -20,5 +20,14 @@ export default function Board({ fen, onMove }) {
     return () => cg.destroy();
   }, [fen]);
 
-  return <div ref={ref} className="w-[400px] h-[400px]" />;
+  return (
+    <div
+      ref={ref}
+      style={{
+        width: "400px",
+        height: "400px",
+        position: "relative"
+      }}
+    />
+  );
 }
