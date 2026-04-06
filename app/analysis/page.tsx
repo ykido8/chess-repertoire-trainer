@@ -1,5 +1,5 @@
-import { fetchLichessGames } from '@/lib/lichess';
-import { fetchChesscomArchive } from '@/lib/chesscom';
+import { fetchLichessGames } from "../../lib/lichess";
+import { fetchChesscomArchive } from "../../lib/chesscom";
 
 export default async function Analysis() {
   // TODO: User input for username
