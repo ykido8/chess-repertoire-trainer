@@ -1,5 +1,5 @@
 "use client";
-import "../public/chessground/chessground.css";
+import "/chessground/chessground.css";
 import { Chessground } from "chessground";
 import { useEffect, useRef } from "react";
 
@@ -13,8 +13,10 @@ export default function Board({ fen, onMove }) {
       fen,
       movable: {
         free: false,
-        events: { after: onMove },
+        events: { after: onMove }
       },
+      // ✅ ¡ESTE PARÁMETRO ES EL QUE FALTABA!
+      assetsUrl: "/pieces/"
     });
 
     return () => cg.destroy();
@@ -24,8 +26,8 @@ export default function Board({ fen, onMove }) {
     <div
       ref={ref}
       style={{
-        width: "400px",
-        height: "400px",
+        width: "480px",
+        height: "480px",
         position: "relative"
       }}
     />
