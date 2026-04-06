@@ -3,7 +3,9 @@ import { useState } from "react";
 import Board from "../../../components/Chessboard";
 
 export default function Quiz() {
-  const [fen, setFen] = useState("startpos");
+  const [fen, setFen] = useState(
+    "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+  );
 
   return (
     <main className="p-6 space-y-4">
