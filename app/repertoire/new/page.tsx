@@ -1,13 +1,12 @@
-'use client';
-import { useState } from 'react';
+"use client";
+import { useState } from "react";
 import Board from "../../../components/Chessboard";
-import { Position } from 'chessops';
 
 export default function NewRepertoire() {
   const [fen, setFen] = useState("startpos");
 
   function onMove(from, to) {
-    // TODO: update tree structure
+    // TODO: lógica para el repertorio (pronto lo hacemos juntos)
   }
 
   return (
