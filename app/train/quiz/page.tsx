@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Board from "../../../components/Chessboard";
+import Board from "../../../components/ChessboardWrapper";
 
 export default function Quiz() {
   const [fen, setFen] = useState(
